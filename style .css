@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #2c2c2c;
+    /* font-size: 100px; */
+}
+.container{
+    margin: 20px 50px 0px 50px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:40px ;
+}
+.logo{
+    font-size: 11px;
+}
+.Home{
+    font-size: 15px;
+    opacity: 50%;
+    font-weight: 600;
+    color: #2c2c2c;
+    cursor: pointer;
+}
+.main-container{
+    display: flex;
+
+}
+.content{
+    flex-basis: 50%;
+}
+.main{
+    width: 70%;
+    margin:40px 0;
+    display: grid;
+    place-content: center;
+    height: 60%;
+}
+.header{
+    letter-spacing: 0.5px;
+    width: 200px;
+    font-size: 16px;
+}
+.text{
+    width: 170px;
+    margin: 20px 0;
+    opacity: 50%;
+    color: #2c2c2c;
+    font-size: 14px;
+}
+.email-subscription{
+    width: 170px;
+
+}
+input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    width: 170px;
+
+}
+::placeholder{
+    color: #2c2c2c;
+    font-weight: 600;
+    font-size: 12px;
+    opacity: 60%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+button{
+    width: 100%;
+    /* background-color: #3e3e3e; */
+    background-color: #08222e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 0px;
+    margin-top: 5px;
+}
+.background-image{
+    flex-basis: 50%;
+    background-image: url(img/photo-1532453288672-3a27e9be9efd.jpeg);
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.social{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+#facebook, #twitter{
+    color: #08222e;
+    padding-right: 20px;
+    cursor: pointer;
+}
+#instagram{
+    color: #08222e;
+    cursor: pointer;
+}
+.contact-us{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:15px 50px;
+    font-size: 15px;
+    color: rgb(100, 94, 94);
+}
+.contact{
+    display: flex;  
+}
+.contact p, .contact i, .address p, .address i {
+    padding-right: 6px;
+}
+.address{
+    display: flex;
+}
+.location{
+    width: 180px;
+}
+.copyright{
+    background-color: #08222e;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 10px;
+  
+    bottom: 0;
+    width: 100%;
+}
+@media screen and (max-width:700px){
+    .header{
+        font-size: 15px;
+    }
+    .text{
+        font-size: 12px;
+
+    }
+  .contact-us{
+      display: unset;
+      font-size: 12px;
+  }
+  .contact, .address{
+      padding-left: 50px;
+      padding-bottom: 20px;
+  }
+  .main-container{
+      display: unset;
+      text-align: center;
+  }
+  .main{
+    width: 100%;
+    margin:40px 0;
+    display: grid;
+    place-content: center;
+    height: 60%;
+}
+}
